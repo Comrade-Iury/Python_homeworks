@@ -1,0 +1,1 @@
+print('\n'.join([str(int(ix) ** 2) for ix in range(int(input()))]))
