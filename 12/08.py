@@ -16,5 +16,4 @@ for symbol in uniq_symbols_list:
             flag += 1
     flags_list.append(flag)
 
-print(*uniq_symbols_list, "----", *flags_list)
 print(uniq_symbols_list[flags_list.index(max(flags_list))])
