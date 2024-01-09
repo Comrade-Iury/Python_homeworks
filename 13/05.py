@@ -8,11 +8,11 @@ for _ in range(int(input())):
             classmates_dict[info[2]] = classmates_dict[info[2]] + " " + info[0]
         else:
             classmates_dict[info[2]] = info[0] + " " + classmates_dict[info[2]]
-mouths_list = list()
+months_list = list()
 for _ in range(int(input())):
-    mouths_list.append(input())
-for mouth in mouths_list:
-    if mouth in classmates_dict:
-        print(classmates_dict[mouth])
+    months_list.append(input())
+for month in months_list:
+    if month in classmates_dict:
+        print(classmates_dict[month])
     else:
         print()
