@@ -1,10 +1,10 @@
-def print_shrug_smile():
-    print("¯\_(ツ)_/¯")
+JOKES_LIST = list()
 
 
-def print_ktulhu_smile():
-    print("{:€")
-
-
-def print_happy_smile():
-    print("(°͡ ͜ʖ ͡°)")
+def print_only_new(message):
+    global JOKES_LIST
+    if message not in JOKES_LIST:
+        print(message)
+        JOKES_LIST.append(message)
+    else:
+        pass

@@ -1,5 +1,25 @@
-def triangle(a, b, c):
-    if a+b > c and a+c > b and b+c > a:
-        print("Это треугольник.")
+FRIENDS_DICT = dict()
+
+
+def add_friends(name_of_person, list_of_friends):
+    if name_of_person not in FRIENDS_DICT:
+        FRIENDS_DICT[name_of_person] = list_of_friends
     else:
-        print("Это не треугольник.")
+        FRIENDS_DICT[name_of_person].extend(list_of_friends)
+
+
+def are_friends(name_of_person1, name_of_person2):
+    if name_of_person2 in FRIENDS_DICT[name_of_person1]:
+        return True
+    return False
+
+
+def print_friends(name_of_person):
+    print(sorted(FRIENDS_DICT[name_of_person]))
+
+
+add_friends("Алла", ["Марина", "Иван"])
+print(are_friends("Алла", "Мария"))
+add_friends("Алла", ["Мария"])
+print(are_friends("Алла", "Мария"))
+print_friends("Алла")
