@@ -1,7 +1,6 @@
 import random
 def make_bingo():
     bingo_matrix = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
-    print(bingo_matrix)
     for i in range(5):
         for j in range(5):
             bingo_matrix[i][j] = random.randint(1, 75)
