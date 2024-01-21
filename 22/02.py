@@ -7,7 +7,7 @@ for new_friend in stdin:
     friends_list.append(new_friend.strip())
 
 unpicked_friends_list = friends_list.copy()
-for friend in range(len(friends_list)):
+for friend in friends_list:
     random_friend = choice(unpicked_friends_list)
     while friend == random_friend:
         random_friend = choice(unpicked_friends_list)
